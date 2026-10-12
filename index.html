@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collection of six small web projects built with HTML and CSS.">
+  <title>Web Projects — A Collection</title>
+  <style>
+    :root { color-scheme: light; --ink: #182b2a; --muted: #61706b; --paper: #f5f4ef; --card: #fff; --line: #e1e4dc; --accent: #426b5b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 "Segoe UI", Arial, sans-serif; }
+    main { width: min(1040px, calc(100% - 40px)); margin: 0 auto; padding: 74px 0 80px; }
+    .eyebrow { color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { max-width: 700px; margin: 10px 0 12px; font-family: Georgia, serif; font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
+    .intro { max-width: 590px; margin: 0 0 38px; color: var(--muted); font-size: 1.05rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); gap: 14px; }
+    .project { display: block; min-height: 168px; padding: 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: inherit; text-decoration: none; transition: transform .18s ease, border-color .18s ease; }
+    .project:hover, .project:focus-visible { transform: translateY(-3px); border-color: var(--accent); outline: none; }
+    .number { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .08em; }
+    h2 { margin: 8px 0 5px; font: 500 1.45rem Georgia, serif; }
+    .project p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .card-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .live-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; background: #eef3ef; border: 1px solid #d4ded8; color: var(--accent); font-size: .7rem; font-weight: 600; }
+    .live-link { display: inline-block; margin-top: 14px; color: var(--accent); font-size: .78rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; word-break: break-all; }
+    .project:hover .live-badge { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .project:hover .live-link { color: #2d4c40; }
+    footer { margin-top: 30px; color: var(--muted); font-size: .85rem; }
+    @media (max-width: 520px) { main { padding-top: 48px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">A small collection · 2026</p>
+    <h1>Six projects.<br>A little bit of everything.</h1>
+    <p class="intro">Explore six independent pages, from plain HTML practice to thoughtfully styled forms, a portfolio, and a travel journal.</p>
+    <nav class="projects" aria-label="Project collection">
+      <a class="project" href="https://dhanush51952.github.io/Multimedia-blog/" target="_blank" rel="noreferrer"><div class="card-meta"><span class="number">01 / HTML ONLY</span><span class="live-badge">Live site ↗</span></div><h2>Multimedia blog</h2><p>Five audio players, four video clips, a dragon trailer, and links to dragon and BMW videos.</p><span class="live-link">dhanush51952.github.io/Multimedia-blog/</span></a>
+      <a class="project" href="https://dhanush51952.github.io/List/" target="_blank" rel="noreferrer"><div class="card-meta"><span class="number">02 / HTML BASICS</span><span class="live-badge">Live site ↗</span></div><h2>Lists &amp; controls</h2><p>Unordered, ordered, nested lists, a range input, and select menus.</p><span class="live-link">dhanush51952.github.io/List/</span></a>
+      <a class="project" href="https://dhanush51952.github.io/Portfolio-website/" target="_blank" rel="noreferrer"><div class="card-meta"><span class="number">03 / PORTFOLIO</span><span class="live-badge">Live site ↗</span></div><h2>Personal portfolio</h2><p>A responsive portfolio with selected work, skills, process, and contact details.</p><span class="live-link">dhanush51952.github.io/Portfolio-website/</span></a>
+      <a class="project" href="https://dhanush51952.github.io/tables/" target="_blank" rel="noreferrer"><div class="card-meta"><span class="number">04 / HTML TABLES</span><span class="live-badge">Live site ↗</span></div><h2>Three tables</h2><p>Three distinct, semantic table examples—nothing else on the page.</p><span class="live-link">dhanush51952.github.io/tables/</span></a>
+      <a class="project" href="https://dhanush51952.github.io/Course-Registration-form/" target="_blank" rel="noreferrer"><div class="card-meta"><span class="number">05 / REGISTRATION</span><span class="live-badge">Live site ↗</span></div><h2>Course registration</h2><p>A calm, premium-feeling course enrollment form.</p><span class="live-link">dhanush51952.github.io/Course-Registration-form/</span></a>
+      <a class="project" href="https://dhanush51952.github.io/Travel-Blog-website/" target="_blank" rel="noreferrer"><div class="card-meta"><span class="number">06 / TRAVEL JOURNAL</span><span class="live-badge">Live site ↗</span></div><h2>Southbound notes</h2><p>A Bengaluru and Tirupati guide with places to visit, eat, and plan around.</p><span class="live-link">dhanush51952.github.io/Travel-Blog-website/</span></a>
+    </nav>
+    <footer>Made as six independent, browser-ready projects.</footer>
+  </main>
+</body>
+</html>
